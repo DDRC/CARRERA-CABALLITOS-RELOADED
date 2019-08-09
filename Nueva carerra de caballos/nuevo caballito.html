@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>juego caballos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="titulo">
+        <h1>Bienvenidos a la gran carrera de caballos de 'Primero C'</h1>
+        <h3>Hecho por: Daniel Rivas</h3>
+        <h3>Desarrollo de Software &numsp; Primero C
+        </h3>
+    </div>
+    <div id="Datoscaballos">
+        <label for="nombreCab">Dale un nombre al primer caballo: </label>
+        <input type="text" name="nombreCab" id="cab">
+        <br><br>
+        <hr>
+        <input type="button" value="Iniciar la carrera" id="inicio" onclick="preparar()">
+    </div>
+    <div id="juego">
+        <input type="button" id="mover"value="Avanzar"  onclick="mover()">
+        <br><br>
+        <img src="dados/dado (1).gif" alt="dado1" class="dados" id="DJ1">
+        <img src="dados/dado (1).gif" alt="dado2" class="dados" id="DJ2">
+        <p class="subttitulo" id="TJ"></p>
+    </div>
+   
+    <div id="Pista">
+        <img src="caballos/caballo-imagen-animada-0063.gif" alt="caballo numero 1" class="caballo" id="CaB1">
+        <p class="caballo" id="CB1"></p>
+        <br><br>
+        <img src="caballos/caballo-imagen-animada-0262.gif" alt="caballo numero 2" class="caballo1" id="CaB2">
+        <p class="caballo" id="CB2"></p>
+    </div>
+    <div id="juego1">
+        <img src="dados/dado (1).gif" alt="dado1" class="dados" id="DNPC1">
+        <img src="dados/dado (1).gif" alt="dado2" class="dados" id="DNPC2">
+        <p class="subttitulo" id="TNPC"></p>
+    </div>
+    <div id="winner">
+        <h1 class="titulo">Has ganado</h1>
+        <img src="caballos/caballo-imagen-animada-0063.gif" alt="caballo numero 1" class="caballo" id="G">
+        <p class="caballo" id="GANADOR1"></p>
+        <br><br>
+        <input type="button" id="Otra"value="Jugar de nuevo"  onclick="otraVez()">
+        <input type="button" id="tbEst"value="Tabla de estadisticas"  onclick="estadisticas()">
+        <input type="button" id="exit"value="Salir"  onclick="cerrar()">
+    </div>
+    <div id="losser">
+        <h1 class="titulo">Has perdido</h1>
+        <img src="caballos/caballo-imagen-animada-0063.gif" alt="caballo numero 2" class="caballo1" id="P">
+        <p class="caballo" id="GANADOR2"></p>
+        <br><br>
+        <input type="button" id="Otra1"value="Jugar de nuevo"  onclick="otraVez()">
+        <input type="button" id="tbEst1"value="Tabla de estadisticas"  onclick="estadisticas()">
+        <input type="button" id="Exit1"value="Salir"  onclick="cerrar()">
+    </div>
+<div id="tablaEstadistica">
+    <table  id="tb_est"  border="1" >
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Numero de turnos</th>
+            <th colspan="6">Frecuencia</th>
+        </tr>
+        <tr>
+            <th>UNO</th>
+            <th>DOS</th>
+            <th>TRES</th>
+            <th>CUATRO</th>
+            <th>CINCO</th>
+            <th>SEIS</th>
+        </tr>
+    </table>
+    <input type="button" id="Otra1"value="Jugar de nuevo"  onclick="otraVez()">
+<input type="button" id="Exit1"value="Salir"  onclick="cerrar()">
+</div>
+</body>
+<script src="logica.js"></script>
+</html>

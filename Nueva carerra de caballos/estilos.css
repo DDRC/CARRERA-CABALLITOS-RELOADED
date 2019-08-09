@@ -1,0 +1,53 @@
+#winner{
+    
+    display: none;
+}
+#losser{
+   display: none;   
+}
+#CaB1{
+    position: relative;
+    width: 150px;
+}
+#CaB2{
+    position: relative;
+    width: 150px;
+}
+#Pista{
+    display: none;
+
+    background-image: url('caballos/pista3.png');
+    width: 100%;
+}
+#juego{
+    display: none;
+}
+#juego1{
+    display: none;
+}
+#tablaEstadistica{
+    display: none;
+}
+.caballo{
+    color: aqua;
+    font-size: 35px;
+}
+.dados{
+    width: 100px;
+}
+.titulo{
+
+    color: blueviolet;
+    font-size: 60px;
+}
+.subttitulo{
+    display: inline;
+    color: yellow;
+    font-size: 25px;
+}
+body{
+    background-size:cover; 
+    background: radial-gradient(ellipse farthest-corner at 45px 45px , rgba(46, 124, 23, 0.829) 0%, rgba(22, 36, 161, 0.527) 50%, rgba(104, 21, 172, 0.575) 95%);
+    
+}
+/*ellipse,#af34fe,#ffaadd*/
